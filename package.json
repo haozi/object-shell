@@ -1,0 +1,23 @@
+{
+  "name": "object-shell",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run build && npm run jasmine",
+    "build": "rollup --config rollup.config.js",
+    "jasmine": "jasmine-node test",
+    "istanbul": "istanbul cover jasmine-node test"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup": "^0.26.3",
+    "rollup-plugin-babel": "^2.4.0"
+  },
+  "dependencies": {
+    "istanbul": "^0.4.3",
+    "jasmine-node": "^1.14.5"
+  }
+}
